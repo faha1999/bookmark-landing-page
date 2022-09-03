@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$c-white: hsl(0, 0%, 100%);
+$c-black: hsl(0, 0%, 0%);
+$c-blue-soft: hsl(231, 69%, 60%);
+$c-red-soft: hsl(0, 94%, 66%);
+$c-blue-grayish: hsl(229, 8%, 60%);
+$c-blue-dark: hsl(229, 31%, 21%);
+
+$font-family: 'Rubik', sans-serif;
+
+$breakpoints: (
+  xs: 375px,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+);
