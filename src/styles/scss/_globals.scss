@@ -28,7 +28,7 @@ a {
   }
 
   &:focus-visible {
-    outline: 2px dashed $c-red-soft;
+    outline: 2px dashed $soft-red;
     outline-offset: 2px;
   }
 }
@@ -39,7 +39,7 @@ button {
   }
 
   &:focus-visible {
-    outline: 2px dashed $c-red-soft;
+    outline: 2px dashed $soft-red;
     outline-offset: 2px;
   }
 }

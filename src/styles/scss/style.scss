@@ -1,2 +1,7 @@
 @import './variables';
+@import './mixins';
 @import './globals';
+
+// utilities
+@import './utilities/common';
+@import './utilities/animation';
