@@ -10,10 +10,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   font-size: 1.125rem;
   font-family: $font-family;
@@ -34,8 +30,16 @@ a {
 }
 
 button {
-  &:focus {
+  padding: 0.5rem 2rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 0.25rem !important;
+  transition: 0.4s ease-in-out;
+
+  &:focus,
+  &:hover {
     outline: none;
+    background: transparent !important;
   }
 
   &:focus-visible {
@@ -62,4 +66,9 @@ ol {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }

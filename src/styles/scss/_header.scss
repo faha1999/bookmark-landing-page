@@ -1,0 +1,26 @@
+nav {
+  .navMenu {
+    display: flex;
+    a {
+      color: $dark-blue;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: $soft-red;
+        transition: 0.4s ease-in-out;
+      }
+    }
+
+    button {
+      background: $soft-red;
+      color: $white;
+      font-size: 0.9rem;
+
+      &:hover {
+        border: 2px solid $soft-red;
+        color: $soft-red;
+      }
+    }
+  }
+}

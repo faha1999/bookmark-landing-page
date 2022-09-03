@@ -1,7 +1,9 @@
 @import './variables';
 @import './mixins';
+
+@import './utilities/animation';
+
 @import './globals';
 
-// utilities
-@import './utilities/common';
-@import './utilities/animation';
+// components
+@import './header';
