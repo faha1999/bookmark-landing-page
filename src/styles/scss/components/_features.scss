@@ -7,7 +7,7 @@
 
   .content {
     ul {
-      max-width: 35rem;
+      max-width: 40rem;
       margin: 0 auto;
       border-bottom: 1px solid $grayish-blue;
 
@@ -20,6 +20,43 @@
             color: $black;
             border-bottom: 3px solid $soft-red;
           }
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+
+      img {
+        background-position: left;
+        background-size: 77%;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: clamp(66px, 17vw, 123px);
+        right: 9vw;
+        height: 54vw;
+        max-height: 352px;
+        border-radius: 0 180px 180px 0;
+        width: 100vw;
+        background-color: $soft-blue;
+        z-index: -1;
+      }
+    }
+
+    .content {
+      justify-content: center;
+      margin: auto;
+
+      button {
+        background: $soft-blue;
+        color: $white;
+
+        &:hover {
+          color: $soft-blue;
+          border: 2px solid $soft-blue;
         }
       }
     }

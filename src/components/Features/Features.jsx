@@ -1,6 +1,7 @@
 import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { featuresData } from '../../data/featuresData';
 
 export const Features = () => {
   return (
@@ -18,43 +19,30 @@ export const Features = () => {
 
           <div className="col-12 content pt-4">
             <Tabs
-              defaultActiveKey="home"
+              defaultActiveKey="bookmark"
               id="justify-tab-example"
               className="mb-3"
               justify
             >
-              <Tab eventKey="home" title="Simple Bookmarking">
-                <div className="row">
-                  <div className="col-md-6 col-sm-12">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio alias dignissimos cum laborum? Molestias
-                      itaque, odit culpa ducimus commodi laudantium!
-                    </p>
+              {featuresData.map((data) => (
+                <Tab
+                  className="pt-4"
+                  eventKey={data.key}
+                  title={data.title}
+                  key={data.key}
+                >
+                  <div className="row">
+                    <div className="col-md-6 col-sm-12 image">
+                      <img src={data.img} alt={data.title} />
+                    </div>
+                    <div className="col-md-6 col-sm-12 content">
+                      <h1>{data.title}</h1>
+                      <p>{data.details}</p>
+                      <button className="mt-3">{data.button}</button>
+                    </div>
                   </div>
-                  <div className="col-md-6 col-sm-12">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio alias dignissimos cum laborum? Molestias
-                      itaque, odit culpa ducimus commodi laudantium!
-                    </p>
-                  </div>
-                </div>
-              </Tab>
-              <Tab eventKey="profile" title="Speedy Searching">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio alias dignissimos cum laborum? Molestias itaque,
-                  odit culpa ducimus commodi laudantium!
-                </p>
-              </Tab>
-              <Tab eventKey="longer-tab" title="Easy Sharing">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio alias dignissimos cum laborum? Molestias itaque,
-                  odit culpa ducimus commodi laudantium!
-                </p>
-              </Tab>
+                </Tab>
+              ))}
             </Tabs>
           </div>
         </div>
