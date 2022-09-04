@@ -1,0 +1,18 @@
+.hero {
+  .heroImg {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      top: clamp(64px, 15vw, 90px);
+      left: 21vw;
+      width: 100vw;
+      height: 54vw;
+      max-height: 324px;
+      background-color: #5368df;
+      border-radius: 88px 0 0 88px;
+      z-index: -1;
+      right: 0;
+    }
+  }
+}
