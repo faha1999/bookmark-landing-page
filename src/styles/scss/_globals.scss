@@ -48,6 +48,11 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  button {
+    padding: 0.5rem 1rem;
+  }
+}
 ul,
 ol {
   list-style: none;
