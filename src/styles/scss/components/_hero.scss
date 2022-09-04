@@ -11,7 +11,7 @@
       content: '';
       top: clamp(64px, 15vw, 120px);
       left: 21vw;
-      width: 29vw;
+      width: 28.4vw;
       height: 54vw;
       max-height: 324px;
       background-color: $soft-blue;
@@ -27,13 +27,6 @@
 
     h1 {
       font-size: 3rem;
-      color: $dark-blue;
-      font-size: 500;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: $grayish-blue;
     }
 
     button {
@@ -79,10 +72,6 @@
     .content {
       margin-top: 3rem;
       text-align: center;
-
-      h1 {
-        font-size: 2rem;
-      }
 
       button {
         font-size: 0.875rem;
