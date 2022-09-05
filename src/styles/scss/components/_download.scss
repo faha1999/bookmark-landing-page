@@ -55,3 +55,19 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .download {
+    .cardContainer {
+      flex-flow: column;
+      margin: 0 auto;
+      width: 90%;
+
+      .downloadCard {
+        &:nth-child(3) {
+          margin-top: 3rem !important;
+        }
+      }
+    }
+  }
+}
