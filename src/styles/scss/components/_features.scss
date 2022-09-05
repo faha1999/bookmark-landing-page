@@ -26,12 +26,15 @@
 
     .image {
       position: relative;
-      // background-size: 77%;
 
       img {
+        width: 90%;
         background-position: left;
-        width: 100%;
         height: 100%;
+
+        &:nth-child(1) {
+          height: 25rem;
+        }
       }
 
       &::before {
