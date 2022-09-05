@@ -1,0 +1,39 @@
+.faq {
+  .faqContent {
+    max-width: 40rem;
+    margin: 0 auto;
+
+    .accordion {
+      // --bs-accordion-border-color: transparent;
+      //--bs-accordion-btn-active-icon-color: red;
+    }
+
+    .accordion-header {
+      button {
+        &:hover {
+          color: $soft-red;
+        }
+      }
+    }
+
+    .accordion-item {
+      border-left: none;
+      border-right: none;
+
+      .accordion-button,
+      &:focus {
+        background: transparent;
+        outline: none;
+        border: none;
+      }
+
+      &::after {
+        color: red;
+      }
+
+      .accordion-button:not(.collapsed) {
+        color: $dark-blue;
+      }
+    }
+  }
+}
