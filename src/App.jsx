@@ -4,6 +4,7 @@ import { Faq } from './components/faq/Faq';
 import { Features } from './components/Features/Features';
 import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
+import { NewsLetter } from './components/newsLetter/NewsLetter';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
       <Features />
       <Download />
       <Faq />
+      <NewsLetter />
     </>
   );
 };

@@ -1,0 +1,47 @@
+.NewsLetter {
+  background: $soft-blue;
+  text-align: center;
+
+  .content {
+    max-width: 30rem;
+    margin: 0 auto;
+
+    p,
+    h1 {
+      color: $white;
+    }
+
+    p {
+      letter-spacing: 4px;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    form {
+      display: flex;
+      margin-left: 2rem;
+
+      input {
+        padding: 0.6rem;
+        border-radius: 0.225rem;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        background: $soft-red;
+        color: $white;
+        margin-left: 1rem;
+
+        &:hover {
+          border: 2px solid $soft-red;
+          color: $soft-red;
+          background: $white !important;
+        }
+      }
+    }
+  }
+}
