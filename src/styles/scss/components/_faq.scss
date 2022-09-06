@@ -1,12 +1,16 @@
 .faq {
+  .heading {
+    h1 {
+      font-size: 2.2rem !important;
+    }
+
+    p {
+      font-size: 1.1rem !important;
+    }
+  }
   .faqContent {
     max-width: 40rem;
     margin: 0 auto;
-
-    .accordion {
-      // --bs-accordion-border-color: transparent;
-      //--bs-accordion-btn-active-icon-color: red;
-    }
 
     .accordion-header {
       button {
@@ -34,6 +38,17 @@
       .accordion-button:not(.collapsed) {
         color: $dark-blue;
       }
+    }
+  }
+
+  .btn {
+    background: $soft-blue;
+    color: $white;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid $soft-blue;
+      color: $soft-blue;
     }
   }
 }

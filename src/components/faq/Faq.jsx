@@ -16,7 +16,7 @@ export const Faq = () => {
               </p>
             </div>
 
-            <div className="faqContent">
+            <div className="faqContent mt-5">
               <div className="col-12">
                 <Accordion defaultActiveKey="1">
                   {faqsData.map((data) => (
@@ -27,6 +27,10 @@ export const Faq = () => {
                   ))}
                 </Accordion>
               </div>
+            </div>
+
+            <div style={{ textAlign: 'center' }}>
+              <button className="btn mt-5">More Info</button>
             </div>
           </div>
         </div>
