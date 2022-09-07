@@ -22,24 +22,57 @@
 
     form {
       display: flex;
-      margin-left: 2rem;
+      margin: 0;
+      padding: 0;
 
-      input {
-        padding: 0.6rem;
-        border-radius: 0.225rem;
-        border: none;
-        outline: none;
+      .input-group {
+        width: 20rem;
+
+        input {
+          padding: 0.6rem;
+          border-radius: 0.225rem;
+          outline: none;
+        }
+
+        .invalid-feedback {
+          color: $white;
+          background: $soft-red;
+          padding: 0.5rem;
+          margin-top: -0.12rem;
+          text-align: left;
+        }
       }
 
       button {
         background: $soft-red;
         color: $white;
-        margin-left: 1rem;
+        margin-left: auto;
+        height: 2.8rem;
 
         &:hover {
           border: 2px solid $soft-red;
           color: $soft-red;
           background: $white !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .NewsLetter {
+    .content {
+      form {
+        flex-direction: column;
+        padding: 0 1rem;
+
+        .input-group {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        button {
+          margin-left: 0;
         }
       }
     }

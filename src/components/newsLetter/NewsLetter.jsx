@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 export const NewsLetter = () => {
   const [validated, setValidated] = useState(false);
@@ -23,28 +25,27 @@ export const NewsLetter = () => {
               <h1>Stay up-to-date with what we’re doing</h1>
             </div>
 
-            <form
-              className="col-12 mt-3 needs-validation"
+            <Form
               noValidate
               validated={validated}
               onSubmit={handleSubmit}
+              className="col-12 mt-4"
             >
-              <div className="row">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Enter your email address"
-                  controlId="validationCustom01"
-                  required
-                />
-                <div className="invalid-feedback">
-                  Please choose a username.
-                </div>
-                <div className="valid-feedback">Looks good!</div>
-              </div>
-
-              <button type="submit">Submit</button>
-            </form>
+              <Form.Group controlId="validationCustomUsername">
+                <InputGroup hasValidation>
+                  <Form.Control
+                    type="email"
+                    placeholder="Username"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    Whoops, make sure it's an email.
+                  </Form.Control.Feedback>
+                </InputGroup>
+              </Form.Group>
+              <button type="submit">Contact Us</button>
+            </Form>
           </div>
         </div>
       </section>
