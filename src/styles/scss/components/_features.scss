@@ -87,6 +87,7 @@
               border-bottom: 3px solid $soft-red;
               width: auto;
               margin: 0 auto;
+              border-radius: 0 !important;
             }
           }
         }
@@ -101,6 +102,7 @@
 
         &::before {
           top: clamp(66px, 17vw, 123px);
+          height: 50vw;
         }
 
         img {
@@ -108,13 +110,13 @@
           height: 100%;
 
           &:nth-child(1) {
-            height: 13rem;
+            height: 18rem;
           }
         }
       }
 
       .content {
-        padding-top: 4rem;
+        padding-top: 10rem;
         text-align: center;
 
         button {
