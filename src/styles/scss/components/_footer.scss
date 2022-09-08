@@ -40,6 +40,18 @@ footer {
         }
       }
     }
+
+    .attribution {
+      color: $white;
+      a {
+        color: $soft-red;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: $grayish-blue;
+        }
+      }
+    }
   }
 }
 

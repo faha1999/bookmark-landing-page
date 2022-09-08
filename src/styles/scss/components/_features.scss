@@ -13,6 +13,7 @@
           &.active {
             color: $black;
             border-bottom: 3px solid $soft-red;
+            transition: 0.5s ease-in-out;
           }
         }
       }
@@ -20,6 +21,7 @@
 
     .image {
       position: relative;
+      animation: tabBackgroundSlide 1000ms ease-in-out;
 
       img {
         width: 90%;
@@ -45,9 +47,10 @@
       }
     }
 
-    .content {
+    .contentBody {
       justify-content: center;
       margin: auto;
+      animation: tabInfoSlide 1000ms ease-in-out;
 
       button {
         background: $soft-blue;
@@ -115,7 +118,7 @@
         }
       }
 
-      .content {
+      .contentBody {
         padding-top: 10rem;
         text-align: center;
 

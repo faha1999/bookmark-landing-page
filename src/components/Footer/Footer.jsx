@@ -26,6 +26,17 @@ export const Footer = () => {
               </div>
             </div>
           </div>
+
+          <div className="pt-5 attribution text-center">
+            Challenge by{' '}
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by <a href="https://github.com/faha1999/">faha1999</a>.
+          </div>
         </div>
       </footer>
     </>

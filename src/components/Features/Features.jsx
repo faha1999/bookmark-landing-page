@@ -35,7 +35,7 @@ export const Features = () => {
                     <div className="col-md-6 col-sm-12 image">
                       <img src={data.img} alt={data.title} />
                     </div>
-                    <div className="col-md-6 col-sm-12 content">
+                    <div className="col-md-6 col-sm-12 contentBody">
                       <h1>{data.title}</h1>
                       <p>{data.details}</p>
                       <button className="mt-3">{data.button}</button>
