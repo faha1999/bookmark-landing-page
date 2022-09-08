@@ -26,4 +26,104 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
+  nav {
+    position: relative;
+    .navMenu {
+      display: none;
+    }
+
+    .mobileNav {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      background: $dark-blue;
+      height: 100vh;
+      padding-top: 3rem;
+
+      .navbar-nav {
+        text-align: center;
+        padding-top: 2rem;
+        width: 85%;
+        margin: 0 auto;
+
+        .nav-item {
+          border-top: 1px solid $grayish-blue;
+          margin-right: 0 !important;
+          padding: 0.8rem 0;
+
+          &:last-child {
+            border-bottom: 1px solid $grayish-blue;
+          }
+
+          a {
+            color: $white;
+
+            &:hover {
+              color: $soft-red;
+            }
+          }
+        }
+      }
+
+      .mobileLogo {
+        width: 100%;
+        display: flex;
+
+        .logo {
+          width: 13rem;
+          height: 2rem;
+          padding-left: 2rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        button {
+          background: transparent;
+          margin-top: 0;
+          height: 2.3rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .logIn {
+        padding-top: 2rem;
+        text-align: center;
+
+        button {
+          width: 85%;
+          background: transparent;
+          border: 2px solid $white;
+          color: $white;
+
+          &:hover {
+            border: 2px solid $soft-red;
+            color: $soft-red;
+          }
+        }
+      }
+
+      .social-icons {
+        text-align: center;
+        margin-top: 20%;
+
+        img {
+          width: 1.5rem;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
 }
